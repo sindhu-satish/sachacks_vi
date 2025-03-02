@@ -5,14 +5,15 @@ import argparse
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--port", default=8000)
-parser.add_argument("--ml-endpoint", default="http://localhost:5000")
+# parser.add_argument("--ml-endpoint", default="http://localhost:5000")
+parser.add_argument("--ml-endpoint", default="https://bb88-2601-646-a180-6c90-6980-458c-acad-42ce.ngrok-free.app/ai")
 args = parser.parse_args()
 
 app = Flask(__name__)
 model_endpoint = args.ml_endpoint
 
-if '/model/predict' not in model_endpoint:
-    model_endpoint = model_endpoint.rstrip('/') + "/model/predict"
+# if '/model/predict' not in model_endpoint:
+#     model_endpoint = model_endpoint.rstrip('/') + "/model/predict"
 
 @app.route("/", methods=["POST", "GET", "HEAD"])
 def chat():
