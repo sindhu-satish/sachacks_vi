@@ -65,7 +65,8 @@
             success: function(data) {
                 clearTimeout(loadingTimeout)
                 $(".loading").remove()
-                $("#chatbox").append('<div class="panel-title reply">' + data["response"] + '</div>')
+                let parsedResponse = data["response"].replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+                $("#chatbox").append('<div class="panel-title reply">' + parsedResponse + '</div>')
                 state = data["state"];
                 matches = data["matches"]
             }
