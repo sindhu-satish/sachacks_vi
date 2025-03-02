@@ -1,3 +1,6 @@
+![Career Compass AI](https://github.com/sindhu-satish/sachacks_vi/blob/main/Career_Compass_AI.png)
+
+
 ## Career Compass AI
 Choosing a career is tough! Our AI-based platform offers personalized real-time trend analysis, & hands-on simulations helping students explore careers, gain insights, and make confident choices!
 
