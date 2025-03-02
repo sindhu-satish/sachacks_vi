@@ -12,7 +12,7 @@ import os
 app = Flask(__name__)
 
 # Set your OpenAI API key (ensure you set this as an environment variable for security)
-openai.api_key = "sk-P4P9EQcJrQXOxop6oTxdInEr308ZHyRPr_k-B6gyjRT3BlbkFJ0BQ4nxMvxQjwFO53Ud4Cwu0e4Kd2zmw_y5CI9YWpQA"
+openai.api_key = "OPENAI-KEY"
 
 folder_path = "db"
 embedding = FastEmbedEmbeddings()
