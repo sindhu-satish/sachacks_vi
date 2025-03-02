@@ -13,4 +13,5 @@ def call_llm(input_text, model_endpoint):
         print(data)
         return data.get("answer", "No response returned from the model.")
     except Exception as e:
-        return f"Error calling the LLM: {str(e)}"
+        print(f"Error calling the LLM: {str(e)}")
+        return f"Oops! Try again"

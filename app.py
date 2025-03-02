@@ -6,7 +6,8 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("--port", default=8000)
 # parser.add_argument("--ml-endpoint", default="http://localhost:5000")
-parser.add_argument("--ml-endpoint", default="https://bb88-2601-646-a180-6c90-6980-458c-acad-42ce.ngrok-free.app/ai")
+ngrok_link = "https://6a90-2601-646-a180-6c90-6980-458c-acad-42ce.ngrok-free.app"
+parser.add_argument("--ml-endpoint", default=f"{ngrok_link}/ai")
 args = parser.parse_args()
 
 app = Flask(__name__)
