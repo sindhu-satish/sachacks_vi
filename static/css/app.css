@@ -1,6 +1,7 @@
 .chatbox {
   padding: 1em;
   overflow-y: scroll;
+  max-height: 80vh;
 }
 
 .reply {
