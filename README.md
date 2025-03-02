@@ -1,5 +1,3 @@
-![Uploading image.png…]()
-
 ## Career Compass AI
 Choosing a career is tough! Our AI-based platform offers personalized real-time trend analysis, & hands-on simulations helping students explore careers, gain insights, and make confident choices!
 
